@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/static/css/main.15459eb4.css",
+    "main.js": "/static/js/main.cf74b68c.js",
+    "static/js/787.bbe47bf7.chunk.js": "/static/js/787.bbe47bf7.chunk.js",
+    "static/media/logoNAFTW.png": "/static/media/logoNAFTW.6f8d1aef55a2eee92db4.png",
+    "index.html": "/index.html",
+    "main.15459eb4.css.map": "/static/css/main.15459eb4.css.map",
+    "main.cf74b68c.js.map": "/static/js/main.cf74b68c.js.map",
+    "787.bbe47bf7.chunk.js.map": "/static/js/787.bbe47bf7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.15459eb4.css",
+    "static/js/main.cf74b68c.js"
+  ]
+}

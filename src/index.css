@@ -1,0 +1,305 @@
+html{
+  scroll-behavior: smooth;
+}
+:root{
+  --purple:rgb(120, 6, 120);
+  --blue:rgb(0, 0, 255);
+}
+html::-webkit-scrollbar{
+  width: 0.2vw;
+}
+html::-webkit-scrollbar-track{
+  background:aliceblue;
+}
+html::-webkit-scrollbar-thumb{
+  background: var(--purple);
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+html::-webkit-scrollbar-button{
+  background: var(--purple);
+  height: 1vw;
+}
+::selection{
+  background: var(--purple);
+}
+*,
+*::before,
+*::after {
+  user-zoom: 1;
+  box-sizing: border-box;
+  backdrop-filter: blur(50px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  font-family: "Alkatra", cursive;
+  font-family: "Nunito Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
+  transition: 100ms ease;
+
+}
+body,body::after,body::before{
+    min-height: 100vh;
+    width: 100%;
+    max-width: 100%;
+}
+body{
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,rgb(0,0,0,0.7),rgb(0,0,23,0.7)),url("https://mybackdrop.co.uk/wp-content/uploads/2017/06/space-galaxy.jpg");
+  background-repeat: repeat-y;
+}
+.nav{
+  width: 100%;
+  height: 100vh;
+  background: url("https://www.wallpaperflare.com/static/87/981/130/space-planet-universe-galaxy-wallpaper.jpg");
+  background-size: cover;
+  background-origin: center;
+  display: grid;
+  place-items: center;
+}
+.headd{
+  overflow: hidden;
+  position: relative;
+  width: 80%;
+  height: 75vh;
+  background: radial-gradient(rgba(120, 6, 120, 0.507),rgba(0, 0, 255, 0.291)),url("https://cie.spacefoundation.org/wp-content/uploads/2022/07/Astronaut.jpg");
+  background-size: cover;
+  border-radius: 2vw;
+  padding: 5px;
+  animation: 40s spacemotion forwards 1;
+  transition: 700ms;
+}
+@keyframes spacemotion{
+  0%{
+    scale: 0.4;
+    rotate: 180deg;
+  }
+  50%{
+    rotate: -10deg;
+  }
+  100%{
+    scale: 1;
+    rotate: 0deg;
+  }
+  
+}
+.navlinks{
+  backdrop-filter: blur(0px);
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  justify-content: space-between;
+  float: right;
+  margin: 1vh 4vh;
+}
+.navlinks li a{
+  color: aliceblue;
+  font-weight: 200;
+  font-size: 2vh;
+
+}
+.navlinks li a:hover,.navlinks li a:focus{
+  font-weight: 400;
+  font-size: 2.05vh;
+
+}
+.contact{
+  border-radius: 3vw;
+  color: aliceblue;
+  background: linear-gradient(135deg,rgba(120, 6, 120, 0.998),rgba(0, 0, 255, 0.646));
+  padding: .2vw 0.7vw;
+  font-weight: 300;
+}
+.navlinks::after{
+  content: '';
+  position: absolute;
+  bottom: -1.4vh;
+  left: -40vw;
+  width: 100%;
+  height: 1%;
+  background: aliceblue;
+}
+.navlinks::before{
+  content: '';
+  position: absolute;
+  bottom: -1.4vh;
+  right: -5vw;
+  width: 100%;
+  height: 1%;
+  background: aliceblue;
+}
+.context{
+  backdrop-filter: blur(0px);
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-60%);
+  display: flex;
+  flex-direction: column;
+  gap: 2vh;
+  align-items: center;
+}
+.context h2{
+  font-size: 2.3vw;
+  font-weight: 500;
+  text-align: center;
+  color: aliceblue;
+}
+.context small{
+  font-size: 0.9vw;
+  text-align: center;
+  width: 90%;
+  color: rgb(166, 166, 166);
+}
+.context a{
+  font-size: 0.9vw;
+  letter-spacing: -0.7px;
+  padding: 1.2vh 2vh;
+}
+
+/*-------------------BLOCKCHAIN CONTENTS---------*/
+section{
+  width: 80%;
+  text-align: center;
+  padding-top: 8vh;
+  margin: auto;
+  backdrop-filter: blur(0px);
+  padding-bottom: 5vh;
+}
+#blockchain{
+  backdrop-filter: blur(0px);
+}
+#blockchain h2{
+  
+  backdrop-filter: blur(0px);
+  color: aliceblue;
+  font-size: 2.2vw;
+  margin-bottom: 6vh;
+}
+#blockchain h2::before{
+  content: '';
+  position: absolute;
+  bottom: -0.8vh;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 0.2vh;
+  background: rgb(178, 178, 178);
+  width: 30%;
+  margin: auto;
+}
+#blockchain p{
+  backdrop-filter: blur(0px);
+  color: aliceblue;
+  font-size: 0.8vw;
+  font-weight: 300;
+  margin-bottom: 6vh;
+}
+#blockchain #linkk{
+  display: flex;
+  flex-direction: row;
+  width: 40%;
+  justify-content: space-between;
+  margin: auto;
+}
+#blockchain #linkk a{
+  font-weight: 500;
+}
+
+/* ----------------------------Devs section start */
+.divis{
+  display:grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3,1fr);
+  gap: 5vw;
+}
+.divis .row{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+}
+.divis .row img{
+ width: 35vw;
+ border-radius: 2vw;
+ height: 35vh;
+ object-fit: cover;
+ object-position: center;
+ transition: 0.3s;
+}
+.divis .row p{
+ text-align: justify;
+ color: aliceblue;
+ width: 90%;
+}
+.divis .row p span{
+  font-weight: 500;
+  font-size: 2vw;
+}
+.divis .row p span::before{
+  content: "";
+  transition: 900ms;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  transform: translateX(-1vw);
+  width: 0.5vw;
+  background: rgba(136, 0, 255, 0.721);
+}
+.divis .row:nth-child(2) p span::before{
+  content: "";
+  transition: 900ms;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  transform: translateX(-1vw);
+  width: 0.5vw;
+  background: rgba(8, 0, 255, 0.721);
+}
+.divis .row:hover img{
+ scale: 1.06;
+ border: 2px solid aliceblue;
+ box-shadow: 1px -1px 5px  rgba(0, 26, 255, 0.769),
+ -1px 1px 5px  rgba(136, 0, 255, 0.721);
+}
+.divis .row:hover p span::before{
+  width: 110%;
+}
+                   /* FOTTER SECTION */
+.footer{
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1vw;
+}
+.footer img{
+ width: 6vw;
+ border: 1px solid aliceblue;
+ height: 2vw;
+ object-fit: cover;
+ border-radius: 2vw;
+}
+.footer .foot{
+  margin-top: 2vw;
+  width: 70%;
+}
+.footer small{
+  display: flex;
+  flex-direction: column;
+  align-items:left;
+  text-align: center;
+  margin-top: 5vw;
+ color: rgb(203, 226, 247);
+}
+.footer small span{
+  text-align: left;
+  font-weight: 200;
+ color: rgb(255, 255, 255);
+}
+.footer .foot::before,
+.footer .foot::after{
+ background: none;
+}
